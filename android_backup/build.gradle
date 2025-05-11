@@ -1,0 +1,25 @@
+buildscript {
+    ext.kotlin_version = '1.9.22' // or latest supported version// Ensure this matches Kotlin compatibility
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath "com.android.tools.build:gradle:8.1.1" // Ensure this matches Gradle compatibility
+    }
+}
+plugins {
+    id("com.google.gms.google-services") version "4.4.2" apply false
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+tasks.register("clean", Delete) {
+    delete rootProject.buildDir
+}

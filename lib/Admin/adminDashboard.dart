@@ -7,14 +7,14 @@ import 'package:fyp_app/auth.dart';
 import 'package:fyp_app/AdminLoginPage.dart';
 
 class AdminDashboardPage extends StatefulWidget {
-  const AdminDashboardPage({Key? key}) : super(key: key);
+  const AdminDashboardPage({super.key});
 
   @override
   State<AdminDashboardPage> createState() => _AdminDashboardPageState();
 }
 
 class _AdminDashboardPageState extends State<AdminDashboardPage> {
-  Widget _selectedPage = const ProfileManagementTab(); // Default page
+  Widget _selectedPage = const AdminProfilePage(); // Default page
 
   void _navigateToPage(Widget page) {
     setState(() {
@@ -57,7 +57,7 @@ class _AdminDashboardPageState extends State<AdminDashboardPage> {
             ListTile(
               leading: const Icon(Icons.person),
               title: const Text('Profile Management'),
-              onTap: () => _navigateToPage(const ProfileManagementTab()),
+              onTap: () => _navigateToPage(const AdminProfilePage()),
             ),
             ListTile(
               leading: const Icon(Icons.chair),

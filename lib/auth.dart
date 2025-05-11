@@ -46,16 +46,21 @@ class Auth {
     required String email,
     required String password,
   }) async {
-    UserCredential userCredential = await signInWithEmailAndPassword(
-      email: email,
-      password: password,
-    );
-    if (!isAdmin(userCredential.user)) {
-      await signOut(); // Sign out if the user is not an admin
-      throw FirebaseAuthException(
-        code: "not-authorized",
-        message: "This account is not authorized for admin access.",
+    try {
+      UserCredential userCredential = await signInWithEmailAndPassword(
+        email: email,
+        password: password,
       );
+      if (!isAdmin(userCredential.user)) {
+        await signOut(); // Sign out if the user is not an admin
+        throw FirebaseAuthException(
+          code: "not-authorized",
+          message: "This account is not authorized for admin access.",
+        );
+      }
+    } catch (e) {
+      print("Sign-in error: $e");
+      throw e;
     }
   }
 }

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:fyp_app/pages/login_register_page.dart';
-import 'package:fyp_app/pages/basePage.dart';
+import 'package:fyp_app/pages/basepage.dart';
 
 class WidgetTree extends StatelessWidget {
   const WidgetTree({Key? key}) : super(key: key);

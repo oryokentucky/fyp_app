@@ -119,7 +119,7 @@ class _AccountPageState extends State<AccountPage> {
       backgroundColor: Colors.grey[100],
       appBar: AppBar(
         title: const Text(
-          'Account',
+          'Profile',
           style: TextStyle(
             fontSize: 20,
             fontWeight: FontWeight.bold,
@@ -154,7 +154,7 @@ class _AccountPageState extends State<AccountPage> {
                   crossAxisAlignment: CrossAxisAlignment.stretch,
                   children: [
                     const Text(
-                      'Account Information',
+                      'Profile Information',
                       style: TextStyle(
                         fontSize: 16,
                         fontWeight: FontWeight.bold,

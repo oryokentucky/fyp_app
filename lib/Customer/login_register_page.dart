@@ -6,7 +6,7 @@ import 'package:fyp_app/AdminLoginPage.dart';
 import 'package:fyp_app/pages/basepage.dart';
 
 class LoginPage extends StatefulWidget {
-  const LoginPage({Key? key}) : super(key: key);
+  const LoginPage({super.key});
 
   @override
   State<LoginPage> createState() => _LoginPageState();
@@ -28,6 +28,7 @@ class _LoginPageState extends State<LoginPage> {
 
       // Use pushAndRemoveUntil to navigate to HomePage and clear back stack
       Navigator.pushAndRemoveUntil(
+        // ignore: use_build_context_synchronously
         context,
         MaterialPageRoute(builder: (context) => BasePage()),
         (route) => false,
