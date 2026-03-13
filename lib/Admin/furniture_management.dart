@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 
 class FurnitureManagementTab extends StatefulWidget {
-  const FurnitureManagementTab({Key? key}) : super(key: key);
+  const FurnitureManagementTab({super.key});
 
   @override
   State<FurnitureManagementTab> createState() => _FurnitureManagementTabState();
@@ -233,7 +233,7 @@ class _FurnitureManagementTabState extends State<FurnitureManagementTab> {
     return Padding(
       padding: const EdgeInsets.only(bottom: 12.0),
       child: DropdownButtonFormField<String>(
-        value: selectedCategory,
+        initialValue: selectedCategory,
         items: categories
             .map((category) => DropdownMenuItem<String>(
                   value: category,
@@ -355,7 +355,7 @@ class _FurnitureManagementTabState extends State<FurnitureManagementTab> {
                 child: ListTile(
                   title: Text(item['name']),
                   subtitle: Text(
-                      'Price: \RM${item['price']} | Quantity: ${item['quantity']}'),
+                      'Price: RM${item['price']} | Quantity: ${item['quantity']}'),
                   trailing: Row(
                     mainAxisSize: MainAxisSize.min,
                     children: [

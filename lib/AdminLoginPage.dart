@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:fyp_app/Admin/adminDashboard.dart';
 
 class AdminLoginPage extends StatefulWidget {
-  const AdminLoginPage({Key? key}) : super(key: key);
+  const AdminLoginPage({super.key});
 
   @override
   State<AdminLoginPage> createState() => _AdminLoginPageState();
@@ -120,7 +120,7 @@ class _AdminLoginPageState extends State<AdminLoginPage> {
                 color: Colors.grey[200],
                 child: Padding(
                   padding: const EdgeInsets.all(16),
-                  child: Container(
+                  child: SizedBox(
                     height: MediaQuery.of(context).size.height *
                         0.5, // Set height to 70% of the screen height
                     child: Column(

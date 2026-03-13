@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 
 class OrderManagementTab extends StatelessWidget {
-  const OrderManagementTab({Key? key}) : super(key: key);
+  const OrderManagementTab({super.key});
 
   final List<String> statusOptions = const [
     'Paid',
@@ -212,7 +212,7 @@ class OrderManagementTab extends StatelessWidget {
         content: StatefulBuilder(
           builder: (context, setState) {
             return DropdownButtonFormField<String>(
-              value: selectedStatus,
+              initialValue: selectedStatus,
               decoration: const InputDecoration(
                 labelText: 'Select Status',
                 border: OutlineInputBorder(),

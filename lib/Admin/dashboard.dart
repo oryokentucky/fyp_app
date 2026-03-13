@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class DashboardTab extends StatelessWidget {
-  const DashboardTab({Key? key}) : super(key: key);
+  const DashboardTab({super.key});
 
   @override
   Widget build(BuildContext context) {

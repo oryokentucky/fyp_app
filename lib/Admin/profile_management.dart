@@ -3,7 +3,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
 class AdminProfilePage extends StatefulWidget {
-  const AdminProfilePage({Key? key}) : super(key: key);
+  const AdminProfilePage({super.key});
 
   @override
   State<AdminProfilePage> createState() => _AdminProfilePageState();
