@@ -11,17 +11,17 @@ class CheckoutPage extends StatefulWidget {
   final double totalPrice;
 
   const CheckoutPage({
-    Key? key,
+    super.key,
     required this.cartItems,
     required this.totalPrice,
-  }) : super(key: key);
+  });
 
   @override
   State<CheckoutPage> createState() => _CheckoutPageState();
 }
 
 class _CheckoutPageState extends State<CheckoutPage> {
-  TextEditingController _addressController = TextEditingController();
+  final TextEditingController _addressController = TextEditingController();
   LatLng? selectedLocation;
 
   String selectedPaymentPlan = 'Full Payment'; // Default

@@ -60,7 +60,7 @@ class Auth {
       }
     } catch (e) {
       print("Sign-in error: $e");
-      throw e;
+      rethrow;
     }
   }
 }

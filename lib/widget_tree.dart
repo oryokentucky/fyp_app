@@ -4,7 +4,7 @@ import 'package:fyp_app/pages/login_register_page.dart';
 import 'package:fyp_app/pages/basepage.dart';
 
 class WidgetTree extends StatelessWidget {
-  const WidgetTree({Key? key}) : super(key: key);
+  const WidgetTree({super.key});
 
   @override
   Widget build(BuildContext context) {

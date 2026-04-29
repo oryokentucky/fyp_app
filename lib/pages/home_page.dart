@@ -6,7 +6,7 @@ import 'package:fyp_app/pages/login_register_page.dart';
 import 'package:fyp_app/pages/ItemDetailPage.dart.dart';
 
 class HomePage extends StatefulWidget {
-  HomePage({Key? key}) : super(key: key);
+  const HomePage({super.key});
 
   @override
   _HomePageState createState() => _HomePageState();

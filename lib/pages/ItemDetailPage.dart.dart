@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 
 class ItemDetailPage extends StatelessWidget {
   final Map<String, dynamic> item;
-  const ItemDetailPage({Key? key, required this.item}) : super(key: key);
+  const ItemDetailPage({super.key, required this.item});
 
   void addToCart(BuildContext context) async {
     final user = FirebaseAuth.instance.currentUser;

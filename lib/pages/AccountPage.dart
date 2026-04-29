@@ -5,7 +5,7 @@ import 'package:fyp_app/auth.dart';
 import 'package:fyp_app/pages/login_register_page.dart';
 
 class AccountPage extends StatefulWidget {
-  const AccountPage({Key? key}) : super(key: key);
+  const AccountPage({super.key});
 
   @override
   State<AccountPage> createState() => _AccountPageState();
@@ -196,8 +196,6 @@ class _AccountPageState extends State<AccountPage> {
                                       false; // Hide loyalty points when editing
                                 });
                               },
-                              child: const Text('Edit Info',
-                                  style: TextStyle(color: Colors.white)),
                               style: ElevatedButton.styleFrom(
                                 backgroundColor: Colors.lightBlue[200],
                                 padding: const EdgeInsets.symmetric(
@@ -205,6 +203,8 @@ class _AccountPageState extends State<AccountPage> {
                                   horizontal: 24,
                                 ),
                               ),
+                              child: const Text('Edit Info',
+                                  style: TextStyle(color: Colors.white)),
                             ),
                     ),
                     // Loyalty Points Section

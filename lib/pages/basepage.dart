@@ -7,7 +7,7 @@ import 'package:fyp_app/pages/order_page.dart';
 import 'package:fyp_app/pages/Home_Page.dart';
 
 class BasePage extends StatefulWidget {
-  const BasePage({Key? key}) : super(key: key);
+  const BasePage({super.key});
 
   @override
   _BasePageState createState() => _BasePageState();

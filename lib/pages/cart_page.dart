@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:fyp_app/pages/Checkout.dart';
 
 class CartPage extends StatefulWidget {
-  CartPage({Key? key}) : super(key: key);
+  const CartPage({super.key});
 
   @override
   _CartPageState createState() => _CartPageState();
